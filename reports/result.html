@@ -48,7 +48,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Oct 4, 2021 12:30:32 PM</span>
+                    <span class='label suite-start-time blue darken-3'>Oct 4, 2021 04:28:12 PM</span>
 				</a>
 			</li>
 			<li>
@@ -73,7 +73,9 @@
 					<i class='material-icons'>warning</i> Status
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
-										<li class='divider'></li>
+											<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+						<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
+					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
 			</div>
@@ -133,14 +135,28 @@
 					<canvas id='parent-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>4</span> test(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='85.714%'><span class='strong'>6</span> test(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='14.286%'>1</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
 		
+		<div class='col s12 m6 l6 np-h'>
+			<div class='card-panel nm-v'>
+				<div class='left panel-name'>Steps</div>
+				<div class='chart-box'>
+					<canvas id='child-analysis' width='100' height='80'></canvas>
+				</div>
+				<div class='block text-small'>
+					<span class='tooltipped' data-position='top' data-tooltip='98.413%'><span class='strong'>62</span> step(s) passed</span>
+				</div>
+				<div class='block text-small'>
+					<span class='strong tooltipped' data-position='top' data-tooltip='1.587%'>1</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+				</div>
+			</div>
+		</div>
 		
 	</div>
 </div>
@@ -152,144 +168,458 @@
 			<ul id='test-collection' class='test-collection'>
 				
 				
-				<li class='test displayed active has-leaf pass' status='pass' bdd='false' test-id='1'>
-					<div class='test-heading'>
-						<span class='test-name'>CreateAndDeleteBoardTest</span>
-						<span class='test-time'>Oct 4, 2021 12:30:32 PM</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Oct 4, 2021 12:30:32 PM</span>
-	<span class='label end-time'>Oct 4, 2021 12:30:32 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+7ms</span>
-</div>
-	<div class='test-desc'>User able to create new board </div>
-	<div class='test-attributes'>
-			<div class='category-list'>
-				<span class='category label white-text'>Smoke</span>
-			</div>
-			<div class='author-list'>
-				<span class='author label white-text'>Indhumathi</span>
-			</div>
-	</div>
-	<ul class='collapsible node-list' data-collapsible='accordion'>
-		
-				<li class='node level-1 leaf pass' status='pass' test-id='2'>
-					<div class='collapsible-header'>
-						<h5 class='node-name'>CreateAndDeleteBoardTest</h5>
-						<span class="node-time label grey lighten-1 white-text">Oct 4, 2021 12:30:32 PM</span>
-						<span class='node-duration label grey lighten-1 white-text'>0h 0m 0s+0ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-				</li>
-	</ul>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active has-leaf pass' status='pass' bdd='false' test-id='3'>
-					<div class='test-heading'>
-						<span class='test-name'>CreateBunchOfTabsTest</span>
-						<span class='test-time'>Oct 4, 2021 12:30:38 PM</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Oct 4, 2021 12:30:38 PM</span>
-	<span class='label end-time'>Oct 4, 2021 12:30:38 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+1ms</span>
-</div>
-	<div class='test-desc'>User able to create bunch of tabs and able to switch to particular tab </div>
-	<div class='test-attributes'>
-			<div class='category-list'>
-				<span class='category label white-text'>Smoke</span>
-			</div>
-			<div class='author-list'>
-				<span class='author label white-text'>Indhumathi</span>
-			</div>
-	</div>
-	<ul class='collapsible node-list' data-collapsible='accordion'>
-		
-				<li class='node level-1 leaf pass' status='pass' test-id='4'>
-					<div class='collapsible-header'>
-						<h5 class='node-name'>CreateBunchOfTabsTest</h5>
-						<span class="node-time label grey lighten-1 white-text">Oct 4, 2021 12:30:38 PM</span>
-						<span class='node-duration label grey lighten-1 white-text'>0h 0m 0s+0ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-				</li>
-	</ul>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active has-leaf pass' status='pass' bdd='false' test-id='5'>
-					<div class='test-heading'>
-						<span class='test-name'>CreateNewBookMarkTest</span>
-						<span class='test-time'>Oct 4, 2021 12:30:40 PM</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Oct 4, 2021 12:30:40 PM</span>
-	<span class='label end-time'>Oct 4, 2021 12:30:40 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+1ms</span>
-</div>
-	<div class='test-desc'>User able to create new board </div>
-	<div class='test-attributes'>
-			<div class='category-list'>
-				<span class='category label white-text'>Smoke</span>
-			</div>
-			<div class='author-list'>
-				<span class='author label white-text'>Indhumathi</span>
-			</div>
-	</div>
-	<ul class='collapsible node-list' data-collapsible='accordion'>
-		
-				<li class='node level-1 leaf pass' status='pass' test-id='6'>
-					<div class='collapsible-header'>
-						<h5 class='node-name'>CreateNewBookMarkTest</h5>
-						<span class="node-time label grey lighten-1 white-text">Oct 4, 2021 12:30:40 PM</span>
-						<span class='node-duration label grey lighten-1 white-text'>0h 0m 0s+0ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-				</li>
-	</ul>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active has-leaf pass' status='pass' bdd='false' test-id='7'>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>DeleteBookMarkTest</span>
-						<span class='test-time'>Oct 4, 2021 12:30:43 PM</span>
+						<span class='test-time'>Oct 4, 2021 04:28:12 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Oct 4, 2021 12:30:43 PM</span>
-	<span class='label end-time'>Oct 4, 2021 12:30:43 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+1ms</span>
+	<span class='label start-time'>Oct 4, 2021 04:28:12 PM</span>
+	<span class='label end-time'>Oct 4, 2021 04:28:12 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
 </div>
 	<div class='test-desc'>User able to delete bookmark </div>
 	<div class='test-attributes'>
 			<div class='category-list'>
 				<span class='category label white-text'>Smoke</span>
 			</div>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='2'>
+					<div class='test-heading'>
+						<span class='test-name'>CreateBunchOfTabsTest</span>
+						<span class='test-time'>Oct 4, 2021 04:28:12 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Oct 4, 2021 04:28:12 PM</span>
+	<span class='label end-time'>Oct 4, 2021 04:28:12 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+	<div class='test-desc'>User able to create bunch of tabs and able to switch to particular tab </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>Smoke</span>
+			</div>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='3'>
+					<div class='test-heading'>
+						<span class='test-name'>CreateAndDeleteBoardTest</span>
+						<span class='test-time'>Oct 4, 2021 04:28:12 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Oct 4, 2021 04:28:12 PM</span>
+	<span class='label end-time'>Oct 4, 2021 04:28:12 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+	<div class='test-desc'>User able to create new board </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>Smoke</span>
+			</div>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf fail' status='fail' bdd='false' test-id='4'>
+					<div class='test-heading'>
+						<span class='test-name'>CreateNewBookMarkTest</span>
+						<span class='test-time'>Oct 4, 2021 04:28:12 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Oct 4, 2021 04:28:12 PM</span>
+	<span class='label end-time'>Oct 4, 2021 04:30:23 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 2m 10s+673ms</span>
+</div>
+	<div class='test-desc'>User able to create new board </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>Smoke</span>
+			</div>
 			<div class='author-list'>
+				<span class='author label white-text'>Indhumathi</span>
+				<span class='author label white-text'>Indhumathi</span>
 				<span class='author label white-text'>Indhumathi</span>
 			</div>
 	</div>
 	<ul class='collapsible node-list' data-collapsible='accordion'>
 		
-				<li class='node level-1 leaf pass' status='pass' test-id='8'>
+				<li class='node level-1 leaf pass' status='pass' test-id='5'>
 					<div class='collapsible-header'>
 						<h5 class='node-name'>DeleteBookMarkTest</h5>
-						<span class="node-time label grey lighten-1 white-text">Oct 4, 2021 12:30:43 PM</span>
+						<span class="node-time label grey lighten-1 white-text">Oct 4, 2021 04:28:12 PM</span>
 						<span class='node-duration label grey lighten-1 white-text'>0h 0m 0s+0ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='6'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>CreateNewBookMarkTest</h5>
+						<span class="node-time label grey lighten-1 white-text">Oct 4, 2021 04:28:12 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='7'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>CreateAndDeleteBoardTest</h5>
+						<span class="node-time label grey lighten-1 white-text">Oct 4, 2021 04:28:12 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+				</li>
+				<li class='node level-1 leaf fail' status='fail' test-id='8'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>CreateBunchOfTabsTest</h5>
+						<span class="node-time label grey lighten-1 white-text">Oct 4, 2021 04:30:23 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 2m 10s+663ms</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:28:17 PM</td>
+													<td class='step-details'>Add Folder is clicked.<img data-featherlight='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img43026.png' width='10%' src='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img43026.png' data-src='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img43026.png'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:28:17 PM</td>
+													<td class='step-details'>Add Folder is clicked.<img data-featherlight='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img33606.png' width='10%' src='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img33606.png' data-src='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img33606.png'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:28:17 PM</td>
+													<td class='step-details'>Add Folder is clicked.<img data-featherlight='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img54455.png' width='10%' src='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img54455.png' data-src='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img54455.png'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:28:17 PM</td>
+													<td class='step-details'>Add Folder is clicked.<img data-featherlight='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img80098.png' width='10%' src='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img80098.png' data-src='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img80098.png'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:28:18 PM</td>
+													<td class='step-details'>Folder title is entered as Folder for AutomationTest<img data-featherlight='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img11195.png' width='10%' src='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img11195.png' data-src='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img11195.png'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:28:18 PM</td>
+													<td class='step-details'>Folder title is entered as Folder for AutomationTest<img data-featherlight='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img56574.png' width='10%' src='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img56574.png' data-src='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img56574.png'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:28:18 PM</td>
+													<td class='step-details'>Folder title is entered as Folder for AutomationTest<img data-featherlight='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img34887.png' width='10%' src='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img34887.png' data-src='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img34887.png'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:28:18 PM</td>
+													<td class='step-details'>Folder title is entered as Folder for AutomationTest<img data-featherlight='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img65259.png' width='10%' src='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img65259.png' data-src='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img65259.png'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:28:19 PM</td>
+													<td class='step-details'>Create board is clicked.<img data-featherlight='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img36390.png' width='10%' src='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img36390.png' data-src='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img36390.png'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:28:19 PM</td>
+													<td class='step-details'>Create board is clicked.<img data-featherlight='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img81227.png' width='10%' src='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img81227.png' data-src='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img81227.png'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:28:19 PM</td>
+													<td class='step-details'>Create board is clicked.<img data-featherlight='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img72277.png' width='10%' src='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img72277.png' data-src='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img72277.png'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:28:19 PM</td>
+													<td class='step-details'>Create board is clicked.<img data-featherlight='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img64989.png' width='10%' src='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img64989.png' data-src='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img64989.png'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:28:19 PM</td>
+													<td class='step-details'>Board title is entered<img data-featherlight='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img60754.png' width='10%' src='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img60754.png' data-src='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img60754.png'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:28:19 PM</td>
+													<td class='step-details'>Board title is entered<img data-featherlight='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img91793.png' width='10%' src='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img91793.png' data-src='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img91793.png'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:28:19 PM</td>
+													<td class='step-details'>Board title is entered<img data-featherlight='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img2088.png' width='10%' src='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img2088.png' data-src='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img2088.png'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:28:19 PM</td>
+													<td class='step-details'>Board title is entered<img data-featherlight='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img72843.png' width='10%' src='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img72843.png' data-src='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img72843.png'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:28:20 PM</td>
+													<td class='step-details'>create column is clicked<img data-featherlight='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img87492.png' width='10%' src='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img87492.png' data-src='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img87492.png'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:28:20 PM</td>
+													<td class='step-details'>create column is clicked<img data-featherlight='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img34095.png' width='10%' src='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img34095.png' data-src='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img34095.png'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:28:20 PM</td>
+													<td class='step-details'>create column is clicked<img data-featherlight='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img38895.png' width='10%' src='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img38895.png' data-src='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img38895.png'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:28:20 PM</td>
+													<td class='step-details'>create column is clicked<img data-featherlight='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img23372.png' width='10%' src='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img23372.png' data-src='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img23372.png'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:28:21 PM</td>
+													<td class='step-details'>Home icon is clicked.<img data-featherlight='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img98834.png' width='10%' src='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img98834.png' data-src='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img98834.png'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:28:21 PM</td>
+													<td class='step-details'>Board for automation board is opened.<img data-featherlight='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img51833.png' width='10%' src='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img51833.png' data-src='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img51833.png'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:28:21 PM</td>
+													<td class='step-details'>Board for automation board is opened.<img data-featherlight='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img1850.png' width='10%' src='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img1850.png' data-src='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img1850.png'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:28:21 PM</td>
+													<td class='step-details'>Board for automation board is opened.<img data-featherlight='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img76571.png' width='10%' src='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img76571.png' data-src='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img76571.png'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:28:22 PM</td>
+													<td class='step-details'>Board is displayed as expected<img data-featherlight='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img2685.png' width='10%' src='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img2685.png' data-src='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img2685.png'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:28:22 PM</td>
+													<td class='step-details'>Board is displayed as expected<img data-featherlight='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img75000.png' width='10%' src='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img75000.png' data-src='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img75000.png'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:28:22 PM</td>
+													<td class='step-details'>Board is displayed as expected<img data-featherlight='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img54866.png' width='10%' src='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img54866.png' data-src='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img54866.png'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:28:22 PM</td>
+													<td class='step-details'>Board for automation board is opened.<img data-featherlight='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img17011.png' width='10%' src='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img17011.png' data-src='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img17011.png'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:28:22 PM</td>
+													<td class='step-details'>Add is clicked<img data-featherlight='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img52692.png' width='10%' src='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img52692.png' data-src='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img52692.png'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:28:22 PM</td>
+													<td class='step-details'>Add is clicked<img data-featherlight='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img21605.png' width='10%' src='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img21605.png' data-src='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img21605.png'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:28:22 PM</td>
+													<td class='step-details'>Add is clicked<img data-featherlight='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img66462.png' width='10%' src='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img66462.png' data-src='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img66462.png'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:28:23 PM</td>
+													<td class='step-details'>Title is entered<img data-featherlight='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img97855.png' width='10%' src='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img97855.png' data-src='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img97855.png'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:28:23 PM</td>
+													<td class='step-details'>Title is entered<img data-featherlight='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img43078.png' width='10%' src='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img43078.png' data-src='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img43078.png'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:28:23 PM</td>
+													<td class='step-details'>Title is entered<img data-featherlight='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img30136.png' width='10%' src='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img30136.png' data-src='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img30136.png'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:28:23 PM</td>
+													<td class='step-details'>URL is entered<img data-featherlight='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img28265.png' width='10%' src='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img28265.png' data-src='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img28265.png'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:28:23 PM</td>
+													<td class='step-details'>URL is entered<img data-featherlight='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img11925.png' width='10%' src='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img11925.png' data-src='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img11925.png'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:28:24 PM</td>
+													<td class='step-details'>URL is entered<img data-featherlight='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img94125.png' width='10%' src='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img94125.png' data-src='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img94125.png'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:28:24 PM</td>
+													<td class='step-details'>Create is clicked<img data-featherlight='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img79141.png' width='10%' src='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img79141.png' data-src='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img79141.png'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:28:24 PM</td>
+													<td class='step-details'>Create is clicked<img data-featherlight='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img83149.png' width='10%' src='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img83149.png' data-src='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img83149.png'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:28:24 PM</td>
+													<td class='step-details'>Create is clicked<img data-featherlight='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img67755.png' width='10%' src='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img67755.png' data-src='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img67755.png'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:28:24 PM</td>
+													<td class='step-details'>Entry count is displayed as expected<img data-featherlight='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img88506.png' width='10%' src='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img88506.png' data-src='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img88506.png'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:28:24 PM</td>
+													<td class='step-details'>Add is clicked<img data-featherlight='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img58261.png' width='10%' src='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img58261.png' data-src='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img58261.png'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:28:25 PM</td>
+													<td class='step-details'>Options is opened for entry Google<img data-featherlight='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img77245.png' width='10%' src='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img77245.png' data-src='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img77245.png'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:28:25 PM</td>
+													<td class='step-details'>Open is clicked<img data-featherlight='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img56998.png' width='10%' src='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img56998.png' data-src='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img56998.png'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:28:25 PM</td>
+													<td class='step-details'>Title is entered<img data-featherlight='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img28509.png' width='10%' src='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img28509.png' data-src='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img28509.png'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:28:25 PM</td>
+													<td class='step-details'>Delete is clicked<img data-featherlight='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img78516.png' width='10%' src='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img78516.png' data-src='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img78516.png'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:28:25 PM</td>
+													<td class='step-details'>URL is entered<img data-featherlight='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img44158.png' width='10%' src='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img44158.png' data-src='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img44158.png'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:28:26 PM</td>
+													<td class='step-details'>Entry count is displayed as expected<img data-featherlight='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img82956.png' width='10%' src='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img82956.png' data-src='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img82956.png'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:28:26 PM</td>
+													<td class='step-details'>Create is clicked<img data-featherlight='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img69460.png' width='10%' src='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img69460.png' data-src='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img69460.png'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:28:26 PM</td>
+													<td class='step-details'>Add is clicked<img data-featherlight='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img76169.png' width='10%' src='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img76169.png' data-src='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img76169.png'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:28:27 PM</td>
+													<td class='step-details'>Switched to 2 window<img data-featherlight='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img58328.png' width='10%' src='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img58328.png' data-src='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img58328.png'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:28:27 PM</td>
+													<td class='step-details'>Title is entered<img data-featherlight='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img66881.png' width='10%' src='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img66881.png' data-src='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img66881.png'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:28:27 PM</td>
+													<td class='step-details'>Current url is matched<img data-featherlight='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img96516.png' width='10%' src='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img96516.png' data-src='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img96516.png'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:28:27 PM</td>
+													<td class='step-details'>URL is entered<img data-featherlight='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img44686.png' width='10%' src='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img44686.png' data-src='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img44686.png'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:28:28 PM</td>
+													<td class='step-details'>Create is clicked<img data-featherlight='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img68380.png' width='10%' src='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img68380.png' data-src='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img68380.png'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:28:28 PM</td>
+													<td class='step-details'>Add is clicked<img data-featherlight='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img80679.png' width='10%' src='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img80679.png' data-src='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img80679.png'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:28:29 PM</td>
+													<td class='step-details'>Title is entered<img data-featherlight='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img68022.png' width='10%' src='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img68022.png' data-src='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img68022.png'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:28:29 PM</td>
+													<td class='step-details'>URL is entered<img data-featherlight='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img97966.png' width='10%' src='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img97966.png' data-src='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img97966.png'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:28:30 PM</td>
+													<td class='step-details'>Create is clicked<img data-featherlight='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img91010.png' width='10%' src='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img91010.png' data-src='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img91010.png'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:28:30 PM</td>
+													<td class='step-details'>Open is clicked<img data-featherlight='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img65238.png' width='10%' src='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img65238.png' data-src='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img65238.png'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:28:41 PM</td>
+													<td class='step-details'>Switched to 4 window<img data-featherlight='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img10630.png' width='10%' src='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img10630.png' data-src='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img10630.png'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:28:46 PM</td>
+													<td class='step-details'>0 number entries is displayed<img data-featherlight='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img96483.png' width='10%' src='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img96483.png' data-src='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img96483.png'></td>
+												</tr>
+												<tr class='log' status='fail'>
+													<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+													<td class='timestamp'>4:30:23 PM</td>
+													<td class='step-details'>Unable to confirm button<img data-featherlight='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img4808.png' width='10%' src='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img4808.png' data-src='/home/indhumathi/Documents/QlearlyAssignment/reports/snaps/img4808.png'></td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
 				</li>
 	</ul>
 					</div>
@@ -348,13 +678,14 @@
 					<div class='category-heading'>
 						<span class='category-name'>Smoke</span>
 						<span class='category-status right'>
-							<span class='label pass'>4</span>
+							<span class='label pass'>3</span>
+							<span class='label fail'>1</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 4</span>
-							
+							<span class='label green accent-4 white-text'>Passed: 3</span>
+							<span class='label red lighten-1 white-text'>Failed: 1</span>
 							
 						</div>
 					
@@ -369,24 +700,24 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Oct 4, 2021 12:30:32 PM</td>
-										<td class='linked' test-id='1'>CreateAndDeleteBoardTest</td>
+										<td>Oct 4, 2021 04:28:12 PM</td>
+										<td class='linked' test-id='1'>DeleteBookMarkTest</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Oct 4, 2021 12:30:38 PM</td>
-										<td class='linked' test-id='3'>CreateBunchOfTabsTest</td>
+										<td>Oct 4, 2021 04:28:12 PM</td>
+										<td class='linked' test-id='2'>CreateBunchOfTabsTest</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Oct 4, 2021 12:30:40 PM</td>
-										<td class='linked' test-id='5'>CreateNewBookMarkTest</td>
+										<td>Oct 4, 2021 04:28:12 PM</td>
+										<td class='linked' test-id='3'>CreateAndDeleteBoardTest</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Oct 4, 2021 12:30:43 PM</td>
-										<td class='linked' test-id='7'>DeleteBookMarkTest</td>
-										<td><span class='test-status pass'>pass</span></td>
+										<td>Oct 4, 2021 04:28:12 PM</td>
+										<td class='linked' test-id='4'>CreateNewBookMarkTest</td>
+										<td><span class='test-status fail'>fail</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -433,13 +764,13 @@
                             <div class='author-heading'>
                                 <span class='author-name'>Indhumathi</span>
                                 <span class='author-status right'>
-                                        <span class='label pass'>4</span>
+                                        <span class='label fail'>1</span>
 						        </span>
                             </div>
                             <div class='author-content hide'>
                                 <div class='author-status-counts'>
-                                    <span class='label green accent-4 white-text'>Passed: 4</span>
                                     
+                                    <span class='label red lighten-1 white-text'>Failed: 1</span>
                                     
                                 </div>
 
@@ -454,24 +785,9 @@
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td>Oct 4, 2021 12:30:32 PM</td>
-                                                <td class='linked' test-id='1'>CreateAndDeleteBoardTest</td>
-                                                <td><span class='test-status pass'>pass</span></td>
-                                            </tr>
-                                            <tr>
-                                                <td>Oct 4, 2021 12:30:38 PM</td>
-                                                <td class='linked' test-id='3'>CreateBunchOfTabsTest</td>
-                                                <td><span class='test-status pass'>pass</span></td>
-                                            </tr>
-                                            <tr>
-                                                <td>Oct 4, 2021 12:30:40 PM</td>
-                                                <td class='linked' test-id='5'>CreateNewBookMarkTest</td>
-                                                <td><span class='test-status pass'>pass</span></td>
-                                            </tr>
-                                            <tr>
-                                                <td>Oct 4, 2021 12:30:43 PM</td>
-                                                <td class='linked' test-id='7'>DeleteBookMarkTest</td>
-                                                <td><span class='test-status pass'>pass</span></td>
+                                                <td>Oct 4, 2021 04:28:12 PM</td>
+                                                <td class='linked' test-id='4'>CreateNewBookMarkTest</td>
+                                                <td><span class='test-status fail'>fail</span></td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -498,31 +814,31 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Tests
-					<div class='panel-lead'>4</div>
+					<div class='panel-lead'>7</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>0</div>
+					<div class='panel-lead'>63</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Oct 4, 2021 12:30:32 PM</div>
+					<div class='panel-lead'>Oct 4, 2021 04:28:12 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Oct 4, 2021 12:30:45 PM</div>
+			 		<div class='panel-lead'>Oct 4, 2021 04:30:23 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 0m 13s+404ms</div>
+					<div class='panel-lead'>0h 2m 10s+815ms</div>
 				</div>
 			</div>
 			<div class='col s6'>
@@ -539,11 +855,11 @@
 						</tr>
 						<tr>
 							<td>Smoke</td>
-							<td>4</td>
-							<td>0</td>
+							<td>3</td>
+							<td>1</td>
 							<td>0</td>
 							<td>
-									100%
+									75%
 							</td>
 						</tr>
 					</table>
@@ -559,22 +875,22 @@
 
 		<script>
 			var statusGroup = {
-				passParent: 4,
-				failParent: 0,
+				passParent: 6,
+				failParent: 1,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				exceptionsParent: 0,
+				exceptionsParent: 1,
 				
-				passChild: 0,
-				failChild: 0,
+				passChild: 62,
+				failChild: 1,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 0,
-				exceptionsChild: 0,
+				exceptionsChild: 1,
 				
 				passGrandChild: 0,
 				failGrandChild: 0,
