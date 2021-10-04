@@ -29,7 +29,6 @@ public class CreateBunchOfTabsTest extends BaseTest {
         columnModel.addLinkEntry("Facebook", "https://www.facebook.com");
         columnModel.addLinkEntry("Instagram", "https://www.instagram.com/");
         columnModel.addLinkEntry("Oslash", "https://www.oslash.com/");
-        System.out.println(columnModel.getEntryList());
         try {
             new HomePage()
                     .addFolder()

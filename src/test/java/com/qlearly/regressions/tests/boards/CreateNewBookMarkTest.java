@@ -18,7 +18,6 @@ public class CreateNewBookMarkTest extends BaseTest {
         testDescription = "User able to create new board";
         testCategory = "Smoke";
         testAuthor = "Indhumathi";
-
     }
 
     @Test
@@ -26,7 +25,6 @@ public class CreateNewBookMarkTest extends BaseTest {
         BoardModel boardModel = new BoardModel("Folder for AutomationTest", "Board for automation");
         ColumnModel columnModel = new ColumnModel(boardModel, "Column for automation");
         columnModel.addLinkEntry("Google", "https://www.google.com");
-        System.out.println(columnModel.getEntryList());
         try {
             new HomePage()
                     .addFolder()
