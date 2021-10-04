@@ -25,13 +25,13 @@ public class DriverProvider {
 
     public static void setLocally() {
         try {
-            System.setProperty("webdriver.chrome.driver", "/home/indhumathi/Documents/QlearlyAssignment/src/test/resources/drivers/chromedriver");
+            System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/src/test/resources/drivers/chromedriver");
             ChromeOptions options = new ChromeOptions();
-            options.addExtensions(new File("./src/main/resources/app.crx"));
+            options.addExtensions(new File(System.getProperty("user.dir")+"/src/test/resources/app.crx"));
             driver.set(new ChromeDriver(options));
             getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
         }catch (Throwable t){
-
+            t.printStackTrace();
         }
     }
 
@@ -58,7 +58,7 @@ public class DriverProvider {
         options.addArguments("--start-maximized");
         options.addArguments("--ignore-certificate-errors");
         options.addArguments("--disable-popup-blocking");
-        options.addExtensions(new File("./src/main/resources/app.crx"));
+        options.addExtensions(new File(System.getProperty("user.dir")+"/src/test/resources/resources/app.crx"));
         return options;
     }
 }

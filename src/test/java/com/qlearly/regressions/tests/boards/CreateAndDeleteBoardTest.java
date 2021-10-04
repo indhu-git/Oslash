@@ -18,14 +18,11 @@ public class CreateAndDeleteBoardTest extends BaseTest {
         testDescription = "User able to create new board";
         testCategory = "Smoke";
         testAuthor = "Indhumathi";
-
     }
 
     @Test
     public void createNewBoardTest() {
         BoardModel boardModel = new BoardModel("Folder for AutomationTest", "Board for automation");
-        ColumnModel columnModel = new ColumnModel(boardModel, "Column for automation");
-        System.out.println(columnModel.getEntryList());
         try {
             HomePage homePage = new HomePage();
             BoardPage boardPage = new BoardPage();

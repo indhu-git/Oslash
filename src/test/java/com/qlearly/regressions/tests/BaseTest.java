@@ -2,13 +2,13 @@ package com.qlearly.regressions.tests;
 
 import com.qlearly.regressions.utils.DriverProvider;
 import com.qlearly.regressions.utils.Interactions;
+import org.openqa.selenium.WebDriver;
 import org.testng.annotations.*;
 
 public class BaseTest extends Interactions {
 
     @BeforeMethod
-    @Parameters(value = {"browser"})
-    public void setup(String browser) {
+    public void setup() {
         node = test.createNode(testName);
         DriverProvider.setLocally();
         driver = DriverProvider.getDriver();
